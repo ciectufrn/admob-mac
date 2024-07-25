@@ -12,16 +12,39 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.igorosberg.adds"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.igorosberg.adds"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "react-native-google-mobile-ads": {
+      "android_app_id": "ca-app-pub-2617758158623773~1670728833",
+      "ios_app_id": "ca-app-pub-2617758158623773~1670728833"
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ],
+      [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "ca-app-pub-2617758158623773~1670728833",
+          "iosAppId": "ca-app-pub-2617758158623773~1670728833"
+        }
+      ]
+    ]
   }
 }
